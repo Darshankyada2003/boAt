@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { CiSearch } from "react-icons/ci";
-import logo from '../assets/Untitled.jpg'
+import logo from '../assets/image.png'
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 
 const Navbar = () => {
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleMenuOpen = () => {
+    setOpenMenu(!openMenu);
+  }
+
   return (
     <nav className="navbar">
       <div className="logo-container">
         <img src={logo} className="logo-image" alt="Logo" />
       </div>
-      <ul className="nav-links">
+      <div class="hamburger" onClick={handleMenuOpen}>
+        ☰
+      </div>
+      <ul className={`nav-links ${openMenu ? "show" : ""}`}>
         <li className="dropdown">
-          Categories
+          Categories <RiArrowDropDownLine className="dropdownicon1" />
           <ul className="dropdown-content">
             <li>Option 1</li>
             <li>Option 2</li>
@@ -20,22 +32,12 @@ const Navbar = () => {
         </li>
         <li className="dropdown">
           boAt Personalisation
-          <ul className="dropdown-content">
-            <li>Option 1</li>
-            <li>Option 2</li>
-            <li>Option 3</li>
-          </ul>
         </li>
         <li className="dropdown">
           Corporate Orders
-          <ul className="dropdown-content">
-            <li>Option 1</li>
-            <li>Option 2</li>
-            <li>Option 3</li>
-          </ul>
         </li>
         <li className="dropdown">
-          More
+          More <RiArrowDropDownLine className="dropdownicon2" />
           <ul className="dropdown-content">
             <li>Option 1</li>
             <li>Option 2</li>

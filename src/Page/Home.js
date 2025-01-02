@@ -7,6 +7,7 @@ import image3 from '../assets/480_Desktop_2_1440x.jpg'
 import image4 from '../assets/Artboard_2_copy_1440x.jpg'
 import image5 from '../assets/shop-now-desk_1440x.jpg'
 import image6 from '../assets/ION_Banner_WEB_f2f301b9-04e1-41f.jpg'
+import saleImage from '../assets/Screenshot 2025-01-02 154053.png'
 import ProductList from '../Component/ProductCard'
 
 const Home = () => {
@@ -41,26 +42,31 @@ const Home = () => {
           <img src={images[current]} className="banner-img" alt="" />
         </div>
       </div>
-      <div className='feature'>
-        <div>
-          <img src='https://www.boat-lifestyle.com/cdn/shop/files/Group_334305_small.svg?v=1682336123' className='warranty' />
+      <div className="feature">
+        <div className="feature-item">
+          <img src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334305_small.svg?v=1682336123" className="warranty" alt="" />
           <p><strong>1 year</strong><br />Warranty</p>
         </div>
-        <div>
-          <img src='https://www.boat-lifestyle.com/cdn/shop/files/Group_334304_small.svg?v=1682336123' className='replace' />
+        <div className="feature-item">
+          <img src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334304_small.svg?v=1682336123" className="replace" alt="" />
           <p><strong>7-day</strong><br />Replacement</p>
         </div>
-        <div>
-          <img src='https://www.boat-lifestyle.com/cdn/shop/files/Group_334303_small.svg?v=1682336123' className='delivery' />
+        <div className="feature-item">
+          <img src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334303_small.svg?v=1682336123" className="delivery" alt="" />
           <p><strong>Free Express</strong><br />Delivery*</p>
         </div>
-        <div>
-          <img src='https://www.boat-lifestyle.com/cdn/shop/files/Group_334302_small.svg?v=1682336123' className='gst' />
+        <div className="feature-item">
+          <img src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334302_small.svg?v=1682336123" className="gst" alt="" />
           <p><strong>GST</strong><br />Billing</p>
         </div>
       </div>
       <div>
         <h2 className='live_sale'>Sale <strong>Is Live</strong></h2>
+        <ProductList />
+      </div>
+      <img src={saleImage} className='saleImage' />
+      <div>
+        <h2 className='live_sale'>New Year,<strong>New Deals</strong></h2>
         <ProductList />
       </div>
     </div>
