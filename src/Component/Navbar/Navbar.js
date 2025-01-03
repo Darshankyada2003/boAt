@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "../Navbar/Navbar.css";
 import { CiSearch } from "react-icons/ci";
-import logo from '../assets/image.png'
+import logo from '../../assets/image.png'
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../Component/Navbar'
+import Navbar from '../Component/Navbar/Navbar'
 import "./Home.css"
 import image1 from '../assets/141_banner_new-desk_1440x.jpg'
 import image2 from '../assets/1440x602_8b70d004-1ffd-4711-8578.jpg'
@@ -9,6 +9,7 @@ import image5 from '../assets/shop-now-desk_1440x.jpg'
 import image6 from '../assets/ION_Banner_WEB_f2f301b9-04e1-41f.jpg'
 import saleImage from '../assets/Screenshot 2025-01-02 154053.png'
 import ProductList from '../Component/ProductCard'
+import Footer from '../Component/Footer/Footer'
 
 const Home = () => {
 
@@ -64,11 +65,61 @@ const Home = () => {
         <h2 className='live_sale'>Sale <strong>Is Live</strong></h2>
         <ProductList />
       </div>
-      <img src={saleImage} className='saleImage' />
+      <img src={saleImage} className='saleImage' alt='' />
       <div>
         <h2 className='live_sale'>New Year,<strong>New Deals</strong></h2>
         <ProductList />
       </div>
+      <h2 className='live_sale'>Shop by <strong>categories</strong></h2>
+      <div className='categories-container'>
+        <div className='categories'>
+          <div className='category1'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/True-wireless-earbuds_small.png?v=1684842854' alt='' />
+            <p>True Wireless Earbuds</p>
+          </div>
+          <div className='category'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/Neckbands_bc6343f4-622f-4ebd-bb36-205643c3bf78_small.png?v=1684842854' alt='' />
+            <p>Neckbands</p>
+          </div>
+          <div className='category2'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/Smartwatches_88f12bcf-24bd-4e3a-aacb-ecc204f62179_small.png?v=1684842853' alt='' />
+            <p>Smart Watches</p>
+          </div>
+          <div className='category'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/nirvana_52689447-c1bb-4bb8-8fa0-0496e3715fc0_small.png?v=1727229889' alt='' />
+            <p>Nirvana</p>
+          </div>
+          <div className='category3'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Headphones_small.png?v=1684842854' alt='' />
+            <p>Wireless Headphones</p>
+          </div>
+          <div className='category4'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Speaker_small.png?v=1684842854' alt='' />
+            <p>Wireless Speakers</p>
+          </div>
+          <div className='category5'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/Wired-Headphones_small.png?v=1684842854' alt='' />
+            <p>Wired Headphones</p>
+          </div>
+          <div className='category6'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/Wired-Earphones_small.png?v=1684842854' alt='' />
+            <p>Wired Earphones</p>
+          </div>
+          <div className='category'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/Soundbars_d9a7bdfd-e780-4581-ab85-f2e86f84cd28_small.png?v=1684842854' alt='' />
+            <p>Soundbars</p>
+          </div>
+          <div className='category7'>
+            <img src='https://www.boat-lifestyle.com/cdn/shop/files/Gaming-Headphones_small.png?v=1684842853' alt='' />
+            <p>Gaming Headphones</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 className='live_sale'>Top Picks<strong>For You</strong></h2>
+        <ProductList />
+      </div>
+      <Footer />
     </div>
   )
 }
