@@ -4,15 +4,30 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import Snowfall from 'react-snowfall'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+document.title = "Buy Earbuds, Headphones, Earphones at India's No.1 Earwear Brand: boAt"
+
 root.render(
   <BrowserRouter>
-    <App />
+    <div style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}>
+      <Snowfall
+        color="#fff"
+        snowflakeCount={100}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          zIndex: 1,
+          pointerEvents: 'none',
+        }}
+      />
+      <App />
+    </div>
   </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
