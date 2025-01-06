@@ -108,6 +108,7 @@
     font-size: 24px;
 }
 
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -145,9 +146,13 @@
 
     .hamburger {
         display: block;
-        /* Show hamburger on mobile */
         font-size: 30px;
         cursor: pointer;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+        top: 0;
     }
 }
 

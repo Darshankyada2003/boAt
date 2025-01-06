@@ -100,7 +100,7 @@
 /* Mobile Layout */
 @media (max-width: 768px) {
     .product-list {
-        gap: 15px;
+        gap: 11px;
     }
 
     .product-card {
@@ -130,7 +130,7 @@
 
 @media (max-width: 480px) {
     .product-card {
-        width: 140px;
+        width: 104px;
     }
 
     .product-image {

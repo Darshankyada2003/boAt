@@ -155,6 +155,50 @@
 }
 
 @media (max-width: 768px) {
+
+    .slider {
+        height: 300px;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feature-item {
+        flex: 1 1 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .feature-item img {
+        margin-bottom: 10px;
+        left: 30px;
+    }
+
+    .feature-item p {
+        font-size: 14px;
+    }
+
+    .live_sale {
+        font-size: large;
+        margin-left: 15px;
+    }
+
+    .saleImage {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .categories-container {
+        margin: 10px;
+    }
+
+    .categories {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
     .category img {
         width: 60px;
         height: 60px;
@@ -163,10 +207,68 @@
     .category p {
         font-size: 12px;
     }
+
+    .category1 img,
+    .category2 img,
+    .category3 img,
+    .category4 img,
+    .category5 img,
+    .category6 img,
+    .category7 img {
+        margin-left: 0;
+    }
+
+    .category p,
+    .category1 p,
+    .category2 p,
+    .category3 p,
+    .category4 p,
+    .category5 p,
+    .category6 p,
+    .category7 p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 480px) {
+
+    .slider {
+        height: 250px;
+    }
+
+    .feature {
+        flex-direction: row;
+        padding: 0px;
+        margin-top: -77px;
+    }
+
+    .feature-item {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .live_sale {
+        font-size: medium;
+        margin-left: 10px;
+    }
+
+    .saleImage {
+        width: 100%;
+        height: 100px;
+        padding: 12px;
+        border-radius: 23px;
+    }
+
+    .category img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .category p {
+        font-size: 10px;
+    }
+
     .categories {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     }
 }
