@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProductCard.css'
+import { useNavigate } from 'react-router-dom';
 
 const products = [
   {
@@ -73,9 +74,13 @@ const products = [
 
 const ProductCard = ({ product }) => {
 
+  const navigate = useNavigate();
+  const handleProduct = () => {
+    navigate("/earbuds");
+  }
 
   return (
-    <div className="product-card">
+    <div className="product-card" onClick={handleProduct}>
       <img src={product.image} alt={product.name} className="product-image" />
       {product.extraDiscount && <span className="badge extra">₹{product.extraDiscount} Off</span>}
       {product.newLaunch && <span className="badge new-launch">New Launch</span>}

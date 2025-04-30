@@ -8,7 +8,7 @@ import image4 from '../assets/Artboard_2_copy_1440x.jpg'
 import image5 from '../assets/shop-now-desk_1440x.jpg'
 import image6 from '../assets/ION_Banner_WEB_f2f301b9-04e1-41f.jpg'
 import saleImage from '../assets/Screenshot 2025-01-02 154053.png'
-import ProductList from '../Component/ProductCard'
+import ProductList from '../Component/All Product/ProductCard'
 import Footer from '../Component/Footer/Footer'
 
 const Home = () => {
